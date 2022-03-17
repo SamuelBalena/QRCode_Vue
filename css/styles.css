@@ -1,0 +1,46 @@
+/* Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles */
+body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   
+    background: rgb(73,221,204);
+    background: linear-gradient(90deg, rgba(73,221,204,1) 29%, rgba(37,171,124,1) 69%);
+}
+
+h1, h2, h3, p {
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+input {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+/* Glass effect */
+.layout {
+    max-width: auto;
+    padding: 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+    color: rgb(255, 254, 254);
+}
+
+.layout::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-attachment: fixed;
+    filter: blur(8px);
+}
